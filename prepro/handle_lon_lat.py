@@ -8,11 +8,12 @@ class HandleLonLat(object):
     def __init__(self):
         pass
 
-    # precision は小数点以下の桁数（距離の精度）
-    # dataframe中のlongitude,latitudeを使用
     def cal_distance(self, aDf, precision):
         """
+        precision は小数点以下の桁数（距離の精度）
+
         Dataframeごと距離を計算
+        
         aDf['longitude'],aDf['latitude']を使用
         """
         lon1 = aDf['longitude']
@@ -45,7 +46,7 @@ class HandleLonLat(object):
     def cal_speed(self, aDf, precision, days_time=True):
         """
         speed(m/s)をDataframeごと計算
-        
+
         dataframe中のlongitude,latitude,time(h:m:s)を使用
         """
         # 距離を取得
