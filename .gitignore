@@ -2,3 +2,6 @@ data/
 prepro/__pycache__
 header.txt
 strategy_memo.md
+data_add_theta_speed/
+fig/
+.DS_Store
